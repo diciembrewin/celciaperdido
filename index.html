@@ -900,6 +900,36 @@
 
     actualizarBoton();
   </script>
+  </script>
+
+<!-- Redirección automática: visitantes de Estados Unidos a ingles.html -->
+<script>
+(async function detectarPais() {
+  const parametros = new URLSearchParams(window.location.search);
+
+  // Permite forzar la versión en español con ?lang=es
+  if (parametros.get("lang") === "es") return;
+
+  // Permite abrir la versión en inglés con ?lang=en
+  if (parametros.get("lang") === "en") {
+    window.location.replace("ingles.html");
+    return;
+  }
+
+  try {
+    const respuesta = await fetch("https://ipapi.co/json/");
+    if (!respuesta.ok) throw new Error("No fue posible detectar el país.");
+
+    const datos = await respuesta.json();
+
+    if (datos.country_code === "US") {
+      window.location.replace("ingles.html");
+    }
+  } catch (error) {
+    console.warn("No se pudo detectar el país. Se mostrará la versión en español.");
+  }
+})();
+</script>
 </body>
 </html>
 
