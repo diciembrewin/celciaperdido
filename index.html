@@ -9,12 +9,14 @@
 
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18541440098"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-18541440098'); </script>
 
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NR848GC9"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NR848GC9');
+</script>
   
   <style>
     :root {
@@ -142,6 +144,11 @@
     .small { color: var(--muted); font-size: 14px; }
     footer .small { color: #cbd5e1; }
     @media(max-width:650px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      nav { width: 100%; }
+      nav a { font-size: 14px; }
+      .brand { font-size: 19px; }
+
       nav { gap: 12px; }
       .hero { padding-top: 60px; padding-bottom: 60px; }
       section { padding-top: 42px; padding-bottom: 42px; }
@@ -149,6 +156,7 @@
   </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR848GC9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header>
   <div class="nav">
