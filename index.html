@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Información educativa e independiente sobre tecnologías de internet, fibra óptica, conectividad y servicios de acceso a internet en Colombia.">
+  <meta name="robots" content="index,follow">
+  <title>Información sobre Internet en Colombia</title>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18541440098"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18541440098');
+</script>
+  <style>
+    :root {
+      --primary: #1456c0;
+      --dark: #10213b;
+      --light: #f4f7fb;
+      --text: #263449;
+      --muted: #64748b;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background: var(--white);
+    }
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 18px 6%;
+    }
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 21px; font-weight: bold; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a, header a { color: white; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      padding: 85px 6%;
+      background: linear-gradient(120deg, #10213b, #1456c0);
+      color: white;
+    }
+    .hero-inner, .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.15;
+      margin: 0 0 20px;
+    }
+    .hero p { max-width: 720px; font-size: 18px; }
+    .button {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 12px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 14px;
+    }
+    section { padding: 58px 6%; }
+    section.alt { background: var(--light); }
+    h2 { color: var(--dark); font-size: 30px; margin-top: 0; }
+    h3 { color: var(--dark); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 23px;
+      box-shadow: 0 5px 18px rgba(16,33,59,.05);
+    }
+    .notice {
+      border-left: 4px solid var(--primary);
+      padding: 15px 18px;
+      background: #edf4ff;
+      border-radius: 5px;
+    }
+    form {
+      display: grid;
+      gap: 14px;
+      max-width: 700px;
+    }
+    label { font-weight: bold; }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font: inherit;
+    }
+    textarea { min-height: 130px; resize: vertical; }
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-weight: normal;
+    }
+    .consent input { width: auto; margin-top: 6px; }
+    button {
+      background: var(--primary);
+      color: white;
+      border: 0;
+      border-radius: 7px;
+      padding: 13px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 35px 6%;
+    }
+    footer a { color: #dbeafe; }
+    .footer-inner { max-width: 1100px; margin: auto; }
+    .small { color: var(--muted); font-size: 14px; }
+    footer .small { color: #cbd5e1; }
+    @media(max-width:650px) {
+      nav { gap: 12px; }
+      .hero { padding-top: 60px; padding-bottom: 60px; }
+      section { padding-top: 42px; padding-bottom: 42px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Internet en Colombia</div>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#consejos">Consejos</a>
+      <a href="#nosotros">Acerca del sitio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <h1>Conoce más sobre las opciones de conexión a internet</h1>
+      <p>
+        Un espacio informativo e independiente para aprender sobre tecnologías
+        de conectividad, fibra óptica, internet residencial y aspectos que
+        conviene tener en cuenta al comparar alternativas en Colombia.
+      </p>
+      <a class="button" href="#tecnologias">Conocer las tecnologías</a>
+    </div>
+  </section>
+
+  <section id="tecnologias">
+    <div class="container">
+      <h2>Tecnologías de conexión a internet</h2>
+      <p>
+        Existen diferentes tecnologías que permiten acceder a internet.
+        La disponibilidad, velocidad y calidad pueden variar según la zona,
+        la infraestructura y el proveedor que opere en cada localidad.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Fibra óptica</h3>
+          <p>
+            Utiliza señales de luz que viajan por cables de fibra para
+            transmitir información. Puede ofrecer altas velocidades y
+            estabilidad, dependiendo del plan y de la infraestructura instalada.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Internet por cable</h3>
+          <p>
+            Emplea redes de cable para proporcionar conexión a internet.
+            Su rendimiento puede depender de la tecnología utilizada,
+            la capacidad de la red y la cantidad de usuarios conectados.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Internet inalámbrico</h3>
+          <p>
+            Permite conectarse mediante señales inalámbricas. La cobertura
+            y el desempeño pueden verse afectados por la distancia,
+            obstáculos físicos y condiciones del entorno.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Internet móvil</h3>
+          <p>
+            Utiliza redes celulares para ofrecer conectividad desde
+            dispositivos compatibles. La experiencia depende de la cobertura,
+            la congestión y las condiciones del servicio contratado.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="consejos">
+    <div class="container">
+      <h2>¿Qué debes revisar antes de contratar internet?</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Disponibilidad en tu zona</h3>
+          <p>
+            Comprueba directamente con el proveedor qué tecnologías y planes
+            están disponibles en tu dirección.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Velocidad de conexión</h3>
+          <p>
+            Considera tanto la velocidad de descarga como la de carga.
+            Evalúa tus necesidades de videollamadas, entretenimiento,
+            estudio y trabajo.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Precio y condiciones</h3>
+          <p>
+            Revisa el precio final, posibles cargos de instalación,
+            equipos, promociones, permanencia y condiciones de cancelación.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Atención al cliente</h3>
+          <p>
+            Consulta los canales oficiales de atención, soporte técnico
+            y procedimientos para presentar reclamaciones.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Conceptos básicos de conectividad</h2>
+      <h3>¿Qué significa Mbps?</h3>
+      <p>
+        Mbps significa megabits por segundo y es una unidad utilizada para
+        expresar la velocidad de transferencia de datos de una conexión.
+      </p>
+      <h3>¿Qué es la latencia?</h3>
+      <p>
+        Es el tiempo que tarda un paquete de información en viajar desde
+        un dispositivo hasta un destino y recibir respuesta. Una latencia
+        menor suele ser conveniente para videollamadas y juegos en línea.
+      </p>
+      <h3>¿Qué puede afectar la señal Wi-Fi?</h3>
+      <p>
+        La distancia al router, las paredes, otros dispositivos inalámbricos,
+        la ubicación del equipo y las características del dispositivo pueden
+        influir en la calidad de la conexión inalámbrica.
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="nosotros">
+    <div class="container">
+      <h2>Acerca de este sitio web</h2>
+      <p>
+        Este sitio tiene fines exclusivamente informativos y educativos.
+        Su objetivo es explicar conceptos generales relacionados con el
+        acceso a internet y las tecnologías de conectividad disponibles
+        en Colombia.
+      </p>
+      <div class="notice">
+        <strong>Independencia:</strong> este sitio no es un proveedor de
+        servicios de internet, no presta servicios de telecomunicaciones,
+        no instala conexiones y no representa ni está afiliado a operadores
+        de telecomunicaciones, salvo que se indique expresamente y se pueda
+        verificar dicha relación.
+      </div>
+      <h3>Responsable del sitio</h3>
+      <p><strong>Nombre:</strong> Fernando Zapata Agudelo</p>
+      <p><strong>Calidad:</strong> Persona natural responsable de este sitio web.</p>
+      <p>
+        Para consultas relacionadas con el contenido o el tratamiento
+        de datos personales puedes utilizar el formulario de contacto
+        disponible en esta página.
+      </p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>
+        Si tienes una pregunta sobre la información publicada en este sitio,
+        puedes enviarla mediante el siguiente formulario.
+      </p>
+
+      <form name="contacto" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contacto">
+
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name"
+                 maxlength="100" required>
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email"
+                 maxlength="150" required>
+        </div>
+
+        <div>
+          <label for="ciudad">Ciudad y país (opcional)</label>
+          <input id="ciudad" name="ciudad" type="text" maxlength="100">
+        </div>
+
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" maxlength="3000" required></textarea>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="autorizacion" value="acepto" required>
+          <span>
+            He leído la
+            <a href="#privacidad">Política de privacidad</a> y autorizo
+            el tratamiento de los datos que envío para atender mi consulta.
+          </span>
+        </label>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <p class="small">
+        No incluyas contraseñas, códigos de verificación, datos bancarios
+        ni información financiera sensible en este formulario.
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="privacidad">
+    <div class="container">
+      <h2>Política de privacidad y tratamiento de datos personales</h2>
+      <p><strong>Última actualización:</strong> 30 de octubre de 2026.</p>
+
+      <h3>1. Responsable del tratamiento</h3>
+      <p>
+        El responsable de este sitio web y del tratamiento de los datos
+        personales enviados mediante sus formularios es Fernando Zapata
+        Agudelo, persona natural. Este sitio es independiente y no representa
+        a proveedores de internet ni a operadores de telecomunicaciones.
+      </p>
+
+      <h3>2. Datos que podemos recibir</h3>
+      <p>
+        A través del formulario podemos recibir nombre, dirección de correo
+        electrónico, ciudad o país si el visitante decide proporcionarlos,
+        y el contenido del mensaje. El servidor o proveedor de alojamiento
+        también podría procesar datos técnicos, como dirección IP, fecha,
+        hora, navegador y registros de seguridad.
+      </p>
+
+      <h3>3. Finalidades del tratamiento</h3>
+      <ul>
+        <li>Recibir y responder consultas enviadas voluntariamente.</li>
+        <li>Dar seguimiento a solicitudes relacionadas con el contenido del sitio.</li>
+        <li>Mantener la seguridad y funcionamiento de la página.</li>
+        <li>Atender obligaciones legales cuando corresponda.</li>
+      </ul>
+      <p>
+        Los datos no deben utilizarse para enviar publicidad no solicitada
+        ni para finalidades distintas a las informadas sin contar con la
+        autorización o fundamento legal correspondiente.
+      </p>
+
+      <h3>4. Autorización</h3>
+      <p>
+        Al marcar la casilla de autorización y enviar el formulario,
+        el visitante manifiesta que ha leído esta política y autoriza
+        el tratamiento de los datos suministrados para las finalidades
+        descritas. La autorización debe ser previa, expresa e informada,
+        de acuerdo con la normativa aplicable.
+      </p>
+
+      <h3>5. Derechos del titular</h3>
+      <p>
+        De acuerdo con la Ley 1581 de 2012 y las normas que la reglamenten,
+        cuando sean aplicables, el titular puede conocer, actualizar y
+        rectificar sus datos; solicitar prueba de la autorización; conocer
+        el uso dado a sus datos; presentar quejas ante la Superintendencia
+        de Industria y Comercio; revocar la autorización y solicitar la
+        supresión de los datos cuando proceda.
+      </p>
+
+      <h3>6. Cómo presentar consultas o solicitudes</h3>
+      <p>
+        El titular puede presentar consultas o solicitudes mediante el
+        formulario de contacto de esta página, indicando claramente el
+        derecho que desea ejercer y proporcionando información suficiente
+        para identificar los datos relacionados con su solicitud.
+        Las solicitudes se atenderán dentro de los términos legales
+        aplicables. Si se requiere un canal adicional o un procedimiento
+        de verificación de identidad, se informará al solicitante.
+      </p>
+
+      <h3>7. Conservación de la información</h3>
+      <p>
+        Los datos se conservarán durante el tiempo necesario para atender
+        la consulta, cumplir las finalidades informadas y atender obligaciones
+        legales. Posteriormente serán eliminados o anonimizados cuando
+        corresponda, salvo que exista una obligación legítima de conservación.
+      </p>
+
+      <h3>8. Encargados y proveedores tecnológicos</h3>
+      <p>
+        El funcionamiento del sitio puede depender de proveedores de
+        alojamiento, procesamiento de formularios, seguridad y servicios
+        técnicos. Si se utiliza Netlify para alojar el sitio y recibir
+        formularios, los datos enviados podrán ser procesados por dicho
+        proveedor conforme a sus propias condiciones y políticas.
+        Debes consultar y configurar los proveedores que realmente utilices
+        antes de publicar esta política.
+      </p>
+
+      <h3>9. Transferencia o transmisión internacional</h3>
+      <p>
+        Algunos proveedores tecnológicos pueden almacenar o procesar
+        información fuera de Colombia. Cuando esto ocurra, el responsable
+        deberá verificar las condiciones legales aplicables y las garantías
+        correspondientes para el tratamiento internacional de los datos.
+      </p>
+
+      <h3>10. Cookies y tecnologías similares</h3>
+      <p>
+        Este sitio puede utilizar almacenamiento técnico del navegador
+        o tecnologías necesarias para su funcionamiento y seguridad.
+        Si se incorporan herramientas de analítica, publicidad o seguimiento,
+        esta política deberá actualizarse para identificarlas, explicar
+        sus finalidades y ofrecer los controles que correspondan.
+      </p>
+
+      <h3>11. Seguridad</h3>
+      <p>
+        Se adoptarán medidas razonables para proteger la información frente
+        a pérdida, acceso no autorizado, alteración o divulgación. Ningún
+        sistema de transmisión o almacenamiento puede garantizar seguridad
+        absoluta.
+      </p>
+
+      <h3>12. Cambios en esta política</h3>
+      <p>
+        Esta política puede actualizarse para reflejar cambios legales,
+        técnicos o en el funcionamiento del sitio. La versión vigente
+        estará publicada en esta página con su fecha de actualización.
+      </p>
+    </div>
+  </section>
+
+  <section id="terminos">
+    <div class="container">
+      <h2>Términos y condiciones de uso</h2>
+
+      <h3>1. Finalidad del sitio</h3>
+      <p>
+        El sitio ofrece contenido general, educativo e informativo sobre
+        internet y tecnologías de conectividad. No vende planes, no realiza
+        instalaciones, no presta servicios de telecomunicaciones y no
+        garantiza cobertura ni disponibilidad de ningún proveedor.
+      </p>
+
+      <h3>2. Información general</h3>
+      <p>
+        El contenido se proporciona con fines informativos. Las características,
+        precios, velocidades, coberturas y condiciones de los servicios
+        pueden cambiar. El visitante debe confirmar cualquier dato directamente
+        con el proveedor correspondiente antes de tomar una decisión.
+      </p>
+
+      <h3>3. Ausencia de afiliación</h3>
+      <p>
+        Las menciones a tecnologías, marcas o proveedores, si las hubiera,
+        son únicamente descriptivas. No implican patrocinio, autorización,
+        representación ni relación comercial con dichas entidades.
+      </p>
+
+      <h3>4. Uso adecuado</h3>
+      <p>
+        El visitante se compromete a utilizar el sitio de forma lícita,
+        no interferir con su funcionamiento y no enviar contenido ilegal,
+        abusivo, malicioso o que infrinja derechos de terceros.
+      </p>
+
+      <h3>5. Propiedad intelectual</h3>
+      <p>
+        Los textos y elementos originales del sitio están protegidos por
+        las normas aplicables. No se permite su reproducción comercial
+        sin autorización, salvo los usos permitidos por la ley.
+      </p>
+
+      <h3>6. Enlaces externos</h3>
+      <p>
+        Los enlaces a páginas de terceros se facilitan por conveniencia
+        informativa. El responsable no controla ni garantiza el contenido,
+        disponibilidad, seguridad o políticas de esos sitios externos.
+      </p>
+
+      <h3>7. Limitación de responsabilidad</h3>
+      <p>
+        Aunque se procura mantener la información actualizada, no se garantiza
+        que sea completa, exacta o aplicable a todas las situaciones.
+        Las decisiones de contratación deben realizarse directamente con
+        el proveedor del servicio.
+      </p>
+
+      <h3>8. Modificaciones</h3>
+      <p>
+        Estos términos pueden actualizarse en cualquier momento. La versión
+        publicada en esta página será la aplicable desde su publicación.
+      </p>
+
+      <h3>9. Contacto</h3>
+      <p>
+        Para consultas sobre estos términos, utiliza el formulario de
+        contacto disponible en esta página.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>Internet en Colombia — Información independiente</strong></p>
+    <p>Responsable del sitio: Fernando Zapata Agudelo, persona natural.</p>
+    <p>
+      <a href="#privacidad">Política de privacidad</a> |
+      <a href="#terminos">Términos y condiciones</a> |
+      <a href="#contacto">Contacto</a>
+    </p>
+    <p class="small">
+      Este sitio es informativo e independiente. No es un proveedor de
+      internet ni representa a operadores de telecomunicaciones.
+    </p>
+    <p class="small">© <span id="year"></span> — Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- Redirección automática: visitantes de Estados Unidos a ingles.html -->
+<script>
+(async function detectarPais() {
+  const parametros = new URLSearchParams(window.location.search);
+
+  // Permite forzar la versión en español con ?lang=es
+  if (parametros.get("lang") === "es") return;
+
+  // Permite abrir la versión en inglés con ?lang=en
+  if (parametros.get("lang") === "en") {
+    window.location.replace("ingles.html");
+    return;
+  }
+
+  try {
+    const respuesta = await fetch("https://ipapi.co/json/");
+    if (!respuesta.ok) throw new Error("No fue posible detectar el país.");
+
+    const datos = await respuesta.json();
+
+    if (datos.country_code === "US") {
+      window.location.replace("ingles.html");
+    }
+  } catch (error) {
+    console.warn("No se pudo detectar el país. Se mostrará la versión en español.");
+  }
+})();
+</script>
+
+</body>
+</html>
